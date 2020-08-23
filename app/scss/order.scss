@@ -1,0 +1,225 @@
+@import "vars";
+
+.order {
+    width: 610px;
+    background: #f2f2f2;
+    border-right: 1px solid #e1e1e1;
+    padding: 75px 100px;
+
+    &__price {
+        margin-left: 25px;
+        display: inline;
+
+        span {
+            font-size: 20px;
+        }
+    }
+
+    &__cost {
+        display: inline;
+        margin-left: 70px;
+        font-size: 14px;
+    }
+
+    &__presence {
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+    }
+
+    &__availability {
+        font-size: 14px;
+        margin-left: 70px;
+        width: 120px;
+        position: relative;
+
+        &:before {
+            position: absolute;
+            content: '';
+            right: 125px;
+            width: 16px;
+            height: 16px;
+            border-radius: 10px;
+            background: #3ab011;
+            margin-left: 50px;
+        }
+    }
+
+    &__line {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        height: 1px;
+        background: #cccccc;
+    }
+
+    &__counter-list ul {
+        padding: 0;
+        margin-right: 100px;
+    }
+
+    &__item {
+        display: block;
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 20px;
+
+        &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            width: 100%;
+            height: 2px;
+            border-top: 1px dotted $main-color-text;
+        }
+    }
+
+    &__key {
+        display: inline-block;
+        position: relative;
+        z-index: 2;
+        background: #f2f2f2;
+        padding-right: 5px;
+        color: $main-color-text;
+        font-size: 14px;
+    }
+
+    &__value {
+        display: block;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        z-index: 2;
+        background: #f2f2f2;
+        font-size: 14px;
+        width: 80px;
+    }
+
+    &__spec-all {
+        margin-top: 35px;
+        display: block;
+        font-size: 14px;
+        color: $main-color;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .order {
+        padding: 75px 60px;
+        width: 425px;
+
+        &__counter-list ul {
+            margin-right: 50px;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .order {
+        padding: 75px 40px;
+
+        &__cost {
+            margin-left: 80px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .order {
+        width: 710px;
+        display: flex;
+        padding: 75px 80px;
+
+        &__top {
+            margin-right: 110px;
+            text-align: center;
+            margin-top: 45px;
+        }
+
+        &__price {
+            margin: 0;
+        }
+
+        &__cost {
+            margin: 20px 0 40px;
+            display: block;
+        }
+
+        &__presence {
+            display: inline;
+        }
+
+        &__availability {
+            margin-left: 35px;
+            margin-top: 20px;
+        }
+
+        &__line {
+            display: none;
+        }
+
+        &__item {
+            width: 290px;
+        }
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .order {
+        width: $mediumpx;
+        display: flex;
+        padding: 45px 30px;
+
+        &__top {
+            margin-right: 45px;
+        }
+
+        &__item {
+            width: 250px;
+        }
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .order {
+        width: 290px;
+        display: block;
+        padding: 40px 20px;
+        border: 1px solid #e1e1e1;
+
+        &__price {
+            margin-left: 0;
+        }
+
+        &__cost {
+            display: inline;
+            margin-left: 50px;
+        }
+
+        &__presence {
+            margin-top: 30px;
+            display: flex;
+            align-items: center;
+            margin-bottom: 50px;
+        }
+
+        &__availability {
+            margin-left: 20px;
+            width: 120px;
+            position: relative;
+            margin-top: 0;
+
+            &:before {
+                position: absolute;
+                content: '';
+                right: 70px;
+                width: 16px;
+                height: 16px;
+                border-radius: 10px;
+                background: #3ab011;
+                margin-left: 50px;
+            }
+        }
+    }
+}

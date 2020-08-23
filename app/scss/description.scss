@@ -1,0 +1,131 @@
+@import "vars";
+
+.description {
+    padding-bottom: 130px;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__descr {
+        max-width: 880px;
+    }
+
+    &__title {
+        margin-top: 60px;
+        margin-bottom: 20px;
+    }
+
+    &__subtitle {
+        font-weight: $semi-bold;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    &__advantages {
+        margin-bottom: 20px;
+    }
+
+    &__advantages:last-of-type {
+        margin-bottom: 40px;
+    }
+
+    &__img {
+        margin-top: 35px;
+        margin-bottom: 45px;
+    }
+
+    &__download {
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    a {
+        color: $main-color;
+        text-decoration: none;
+        border-bottom: 1px solid $main-color;
+
+        &:hover {
+            border-bottom: 1px solid $active-color;
+            color: $active-color;
+            transition: $main-transition;
+        }
+    }
+
+    &__icon {
+        width: 40px;
+        height: 40px;
+        background: $main-color;
+        position: relative;
+        margin-right: 10px;
+
+        &:after {
+            position: absolute;
+            content: '';
+            top: 5px;
+            left: 10px;
+            right: 0;
+            bottom: 0;
+            background-image: url(../img/icons/pdf.png);
+            background-repeat: no-repeat;
+        }
+
+        &-docx {
+            background: #1789e9;
+
+            &:after {
+                background-image: url(../img/icons/docx.png);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .description {
+        padding-bottom: 90px;
+
+        &__wrapper {
+            display: block;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .description {
+        padding-bottom: 80px;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .description__title {
+        margin-top: 40px;
+    }
+
+    .description__advantages {
+        margin-bottom: 15px;
+    }
+
+    .description__img {
+        margin-bottom: 20px;
+
+        img {
+            max-width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .description {
+        padding-bottom: 30px;
+
+        &__title {
+            margin-top: 20px;
+        }
+
+        &__download {
+            font-size: 13px;
+        }
+    }
+}

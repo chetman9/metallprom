@@ -1,0 +1,116 @@
+@import "vars";
+
+.menu {
+    width: 770px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    &__item {
+        list-style-type: none;
+    }
+
+    &__link {
+        text-decoration: none;
+        font-size: 16px;
+        color: #333;
+        display: flex;
+
+        &:hover {
+            color: $main-color;
+            transition: $main-transition;
+        }
+
+        span {
+            position: relative;
+            display: flex;
+            margin-left: 12px;
+
+            &:before {
+                position: absolute;
+                content: '';
+                top: 10px;
+                width: 7px;
+                height: 2px;
+                background: #a1a1a1;
+                left: 3px;
+                transform: rotate(-45deg);
+            }
+
+            &:after {
+                position: absolute;
+                content: '';
+                top: 10px;
+                width: 7px;
+                height: 2px;
+                background: #a1a1a1;
+                left: 0px;
+                transform: rotate(45deg);
+            }
+        }
+    }
+
+    &__mobile-tel {
+        display: none;
+    }
+
+    &__hamburger {
+        position: relative;
+        width: 17px;
+        height: 3px;
+        background: #333;
+        display: block;
+
+        &:before {
+            position: absolute;
+            content: '';
+            background: #333;
+            width: 100%;
+            height: 100%;
+            bottom: -12px;
+        }
+
+        &:after {
+
+            position: absolute;
+            content: '';
+            background: #333;
+            width: 100%;
+            height: 100%;
+            top: 6px;
+        }
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .menu {
+        width: 80px;
+
+        &__item {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .menu__mobile-tel {
+        display: block;
+        position: absolute;
+        right: 130%;
+    }
+
+    .menu__hamburger {
+        margin-top: 2px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .menu {
+        width: 55px;
+
+        &__mobile-tel {
+            position: absolute;
+            right: 130%;
+        }
+    }
+}

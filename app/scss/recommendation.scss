@@ -1,0 +1,61 @@
+@import "vars";
+
+.recommendation {
+    background: #f2f2f2;
+    padding: 120px 0 145px 0;
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 45px;
+    }
+
+    &__arrow {
+        display: flex;
+    }
+
+    &__item {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .recommendation {
+        padding: 100px 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .recommendation {
+        padding: 70px 0;
+
+        &__top {
+            justify-content: center;
+        }
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .recommendation {
+        padding: 60px 0 40px 0;
+
+        &__title {
+            margin-top: 6px;
+        }
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .recommendation {
+        padding: 50px 0 30px 0;
+
+        &__title {
+            margin-left: 60px;
+        }
+
+        &__item {
+            justify-content: center;
+        }
+    }
+}

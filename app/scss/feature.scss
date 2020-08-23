@@ -1,0 +1,114 @@
+@import "vars";
+
+.feature {
+
+    &__table {
+        border-collapse: collapse;
+        width: 610px;
+    }
+
+    &__title {
+        text-align: left;
+        margin-top: 60px;
+        margin-bottom: 30px;
+    }
+
+    &__key {
+        color: $main-color-text;
+        max-width: 370px;
+    }
+
+    td {
+        padding: 12px 25px;
+        border: 1px solid #e1e1e1;
+    }
+
+    tr:nth-child(even) {
+        background: #f2f2f2;
+    }
+
+    span {
+        color: $main-color;
+        text-decoration: underline;
+    }
+
+    &__table_bottom {
+        margin-top: 15px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .feature {
+
+        &__table {
+            width: 470px;
+            margin-left: 60px;
+        }
+
+        &__value {
+            width: 200px;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .feature {
+        display: flex;
+        justify-content: space-between;
+
+        &__table {
+            margin-left: 0;
+            width: 460px;
+        }
+
+        &__table_bottom {
+            margin-top: 0px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .feature {
+        display: block;
+
+        &__table {
+            border-collapse: collapse;
+            width: 710px;
+        }
+
+        &__title {
+            margin-top: 50px;
+        }
+
+        &__key {
+            width: 50%;
+        }
+
+        &__value {
+            width: 50%;
+        }
+    }
+}
+
+
+@media screen and (max-width: 560px) {
+    .feature__table {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .feature__table {
+        width: 330px;
+    }
+
+    .feature td {
+        td {
+            padding: 10px 15px;
+        }
+    }
+
+    .feature__title {
+        margin-bottom: 15px;
+    }
+}

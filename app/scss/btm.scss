@@ -1,0 +1,40 @@
+@import "vars";
+
+.btm {
+    padding: 15px 0;
+    width: 160px;
+    background: $main-color;
+    border-radius: 25px;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: $semi-bold;
+    outline: none;
+    border: 0;
+
+    &:hover {
+        background: $active-color;
+        transition: $main-transition;
+        box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
+    }
+}
+
+.btm_discount {
+    background: #fff;
+    color: $main-color;
+    width: 250px;
+    margin-top: 20px;
+
+    &:hover {
+        color: $active-color;
+        transition: $main-transition;
+        background: #fff;
+    }
+
+    &:active {
+        color: #000;
+        transition: $main-transition;
+    }
+}

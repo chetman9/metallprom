@@ -1,0 +1,31 @@
+@import "vars";
+
+.points {
+    padding: 27px 0 22px;
+    background: #f2f2f2;
+    color: #888888;
+    font-size: 13px;
+
+    &__link {
+        color: #888888;
+        padding: 12px;
+    }
+
+    &__last {
+        color: $main-color-text;
+        display: inline;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .points {
+        padding: 15px 0;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        &__link {
+            padding: 5px;
+        }
+    }
+}

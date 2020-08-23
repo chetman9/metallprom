@@ -1,0 +1,225 @@
+@import "vars";
+
+.footer {
+    padding: 60px 0;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 120px;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        font-size: 18px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 120px;
+    }
+
+    &__link {
+        color: #333;
+        text-decoration: none;
+        font-weight: $semi-bold;
+        width: 140px;
+    }
+
+    &__connect {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 120px;
+    }
+
+    &__connect-title {
+        font-size: 18px;
+        font-weight: $semi-bold;
+        color: #333;
+    }
+
+    &__tel {
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+
+        a {
+            color: #333333;
+            text-decoration: none;
+            margin-left: 10px;
+        }
+    }
+
+    &__email {
+        font-size: 13px;
+        display: flex;
+        align-items: center;
+
+        a {
+            color: $main-color;
+            text-decoration: none;
+            margin-left: 10px;
+        }
+    }
+
+    &__adress {
+        font-size: 13px;
+        display: flex;
+        align-items: center;
+
+        a {
+            color: #333333;
+            text-decoration: none;
+            margin-left: 10px;
+        }
+    }
+
+    &__developer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 220px;
+        font-size: 13px;
+    }
+
+    &__text {
+        color: #888888;
+        text-decoration: none;
+    }
+
+    &__socials {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__social {
+        width: 36px;
+        height: 36px;
+        background: #cccccc;
+        position: relative;
+        margin-right: 10px;
+        border-radius: 50%;
+
+        &:after {
+            position: absolute;
+            content: '';
+            top: 8px;
+            left: 13px;
+            right: 0;
+            bottom: 0;
+            background-repeat: no-repeat;
+        }
+
+        &_facebook {
+
+            &:hover {
+                background: #5959d8;
+                transition: $main-transition;
+            }
+
+            &:active {
+                background: #4040b3;
+                transition: $main-transition;
+            }
+
+            &:after {
+                background-image: url(../img/icons/facebook.png);
+            }
+        }
+
+        &_vk {
+
+            &:hover {
+                background: #628dd3;
+                transition: $main-transition;
+            }
+
+            &:active {
+                background: #3768b9;
+                transition: $main-transition;
+            }
+
+            &:after {
+                top: 12px;
+                left: 7px;
+                background-image: url(../img/icons/vk.png);
+            }
+        }
+
+        &_inst {
+
+            &:hover {
+                background: #af35d2;
+                transition: $main-transition;
+            }
+
+            &:active {
+                background: #7e47b7;
+                transition: $main-transition;
+            }
+
+            &:after {
+                top: 9px;
+                left: 9px;
+                background-image: url(../img/icons/inst.png);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1280px) {
+
+    .footer__wrapper {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+    .footer {
+        padding: 50px 0;
+
+        &__socials {
+            width: 100%;
+            flex-direction: row;
+            justify-content: center;
+            margin-top: 50px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer__item {
+        display: none;
+    }
+
+    .footer__developer {
+        margin-right: 130px;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .footer__developer {
+        margin-right: 40px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .footer {
+        padding: 30px 0;
+
+        &__wrapper {
+            justify-content: center;
+            text-align: center;
+        }
+
+        &__developer {
+            margin-right: 0;
+        }
+
+        &__connect {
+            margin-bottom: 40px;
+        }
+    }
+}
