@@ -50,8 +50,12 @@
     .recommendation {
         padding: 50px 0 30px 0;
 
+        &__top {
+            margin-bottom: 30px;
+        }
+
         &__title {
-            margin-left: 60px;
+            text-align: center;
         }
 
         &__item {

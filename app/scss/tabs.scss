@@ -137,8 +137,21 @@
 }
 
 @media screen and (max-width: 768px) {
-    .tabs__item {
-        font-size: 16px;
-    }
+    .tabs {
+        padding-top: 40px;
 
+        &__item {
+            font-size: 16px;
+        }
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .tabs {
+        padding-top: 30px;
+
+        &_mobile {
+            margin-bottom: 50px;
+        }
+    }
 }

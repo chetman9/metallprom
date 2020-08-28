@@ -189,18 +189,22 @@
 
 @media screen and (max-width: 360px) {
     .order {
-        width: 290px;
         display: block;
-        padding: 40px 20px;
+        padding: 40px 20px 30px;
         border: 1px solid #e1e1e1;
 
+        &__top {
+            margin: 0;
+        }
+
         &__price {
-            margin-left: 0;
+            margin-right: 25px;
         }
 
         &__cost {
             display: inline;
-            margin-left: 50px;
+            margin-right: 25px;
+            font-size: 13px;
         }
 
         &__key {
@@ -212,7 +216,6 @@
         }
 
         &__presence {
-            margin-top: 30px;
             display: flex;
             align-items: center;
             margin-bottom: 50px;
@@ -220,23 +223,23 @@
 
         &__spec-all {
             font-size: 13px;
+            margin-top: 20px;
         }
 
         &__availability {
-            margin-left: 20px;
+            margin-left: 30px;
             width: 120px;
-            position: relative;
             margin-top: 0;
+            font-size: 13px;
 
             &:before {
                 position: absolute;
                 content: '';
-                right: 70px;
+                right: 105px;
                 width: 16px;
                 height: 16px;
                 border-radius: 10px;
                 background: #3ab011;
-                margin-left: 50px;
             }
         }
     }

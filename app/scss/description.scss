@@ -135,11 +135,25 @@
 
 @media screen and (max-width: 360px) {
     .description {
-        padding-bottom: 30px;
+        padding-bottom: 0;
 
         &__title {
             margin-top: 20px;
             font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        &__subtitle {
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        &__advantages {
+            margin: 0;
+        }
+
+        &__advantages:last-of-type {
+            margin-bottom: 25px;
         }
 
         &__text {

@@ -229,7 +229,6 @@
             font-size: 16px;
         }
 
-
         &__wrapper {
             justify-content: center;
             text-align: center;
@@ -237,10 +236,20 @@
 
         &__developer {
             margin-right: 0;
+            height: 80px;
         }
 
         &__connect {
-            margin-bottom: 40px;
+            margin-bottom: 30px;
+            align-items: center;
+            height: 100px;
+
+            img {
+                display: none;
+            }
+        }
+        &__socials {
+            margin-top: 25px;
         }
     }
 }
