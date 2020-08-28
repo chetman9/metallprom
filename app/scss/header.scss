@@ -73,17 +73,22 @@
     &__order-phone {
         color: #cc0a0a;
         font-size: 13px;
+        font-weight: $regular;
     }
 }
 
 @media screen and (max-width: 768px) {
     .header {
-        padding: 20px 0;
+        padding: 20px 0 15px 0;
         position: sticky;
         top: 0;
         width: 100%;
         background: #fff;
         z-index: 3;
+
+        &__left {
+            width: 480px;
+        }
     }
 }
 

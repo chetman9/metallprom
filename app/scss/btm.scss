@@ -38,3 +38,23 @@
         transition: $main-transition;
     }
 }
+
+@media screen and (max-width: 560px) {
+    .btm {
+        font-size: 15px;
+    }
+
+    .btm_discount {
+        background: #fff;
+        color: $main-color;
+        width: 250px;
+        margin-top: 20px;
+        font-weight: $bold;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .btm {
+        font-size: 15px;
+    }
+}

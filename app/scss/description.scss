@@ -28,7 +28,7 @@
     }
 
     &__advantages:last-of-type {
-        margin-bottom: 40px;
+        margin-bottom: 35px;
     }
 
     &__img {
@@ -36,10 +36,15 @@
         margin-bottom: 45px;
     }
 
+    &__text {
+        line-height: 25px;
+    }
+
     &__download {
         display: flex;
         align-items: center;
         margin-top: 10px;
+        font-size: 15px;
     }
 
     a {
@@ -95,23 +100,35 @@
 @media screen and (max-width: 768px) {
     .description {
         padding-bottom: 80px;
+
+        &__title {
+            margin-top: 40px;
+        }
+
+        &__advantages {
+            margin-bottom: 13px;
+        }
+
+        &__img {
+            margin-bottom: 20px;
+
+            img {
+                max-width: 100%;
+            }
+        }
     }
 }
 
 @media screen and (max-width: 560px) {
-    .description__title {
-        margin-top: 40px;
-    }
+    .description {
+        padding-bottom: 50px;
 
-    .description__advantages {
-        margin-bottom: 15px;
-    }
+        &__advantages {
+            margin-bottom: 8px;
+        }
 
-    .description__img {
-        margin-bottom: 20px;
-
-        img {
-            max-width: 100%;
+        &__text {
+            line-height: 22px;
         }
     }
 }
@@ -122,6 +139,11 @@
 
         &__title {
             margin-top: 20px;
+            font-size: 16px;
+        }
+
+        &__text {
+            font-size: 13px;
         }
 
         &__download {

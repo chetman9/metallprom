@@ -23,6 +23,10 @@
         border: 1px solid #e1e1e1;
     }
 
+    tr {
+        font-size: 15px;
+    }
+
     tr:nth-child(even) {
         background: #f2f2f2;
     }
@@ -95,9 +99,21 @@
     .feature__table {
         width: 100%;
     }
+
+    .feature__title {
+        margin-bottom: 20px;
+    }
+
+    .feature__table_bottom {
+        margin-top: -10px;
+    }
 }
 
 @media screen and (max-width: 360px) {
+    .feature__title h4 {
+        font-size: 17px;
+    }
+
     .feature__table {
         width: 330px;
     }
@@ -106,6 +122,10 @@
         td {
             padding: 10px 15px;
         }
+    }
+
+    .feature tr {
+        font-size: 13px;
     }
 
     .feature__title {

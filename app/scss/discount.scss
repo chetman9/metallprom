@@ -45,13 +45,19 @@
     }
 }
 
+@media screen and (max-width: 560px) {
+    .discount__title {
+        font-size: 22px;
+    }
+}
+
 @media screen and (max-width: 360px) {
     .discount__wrapper {
         padding: 35px;
     }
 
     .discount__title {
-        font-size: 20px;
+        font-size: 18px;
         text-align: center;
     }
 }

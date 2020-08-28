@@ -17,9 +17,22 @@
     }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 768px) {
+    .points__link:first-child {
+        padding-left: 0;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
     .points {
         padding: 15px 0;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .points {
+
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;

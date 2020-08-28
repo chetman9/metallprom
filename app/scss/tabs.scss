@@ -2,6 +2,7 @@
 
 .tabs {
     padding-top: 90px;
+    font-weight: $semi-bold;
 
     &_mobile {
         display: none;
@@ -16,7 +17,6 @@
 
         &-active {
             color: #000;
-            font-weight: $semi-bold;
             border-bottom: 2px solid $main-color;
             padding-bottom: 16px;
         }
@@ -30,10 +30,10 @@
 
 @media screen and (max-width: 768px) {
     .tabs {
-        padding-top: 60px;
+        padding-top: 55px;
 
         &__item {
-            margin-right: 20px;
+            margin-right: 27px;
         }
     }
 
@@ -41,7 +41,6 @@
         margin-right: 0;
     }
 }
-
 
 @media screen and (max-width: 560px) {
     .tabs__item:nth-last-child(-n+3) {
@@ -53,7 +52,7 @@
         display: flex;
         justify-content: space-between;
         border: 1px solid #ccc;
-        width: 100%;
+        width: 95%;
         border-bottom: 2px solid $main-color;
 
         span {
@@ -91,7 +90,7 @@
     .tabs_mobile {
         padding: 0;
         margin-bottom: 80px;
-        display: flex;
+        display: block;
     }
 
     .tabs__item_mobile:first-child {
@@ -100,14 +99,11 @@
 
     .tabs__item_mobile:nth-last-child(-n+3) {
         display: flex;
-    }
-
-    .tabs__item_mobile {
+        width: 95%;
+        justify-content: space-between;
         border: 1px solid #ccc;
         margin-top: 5px;
-        padding: 16px;
-        width: 100%;
-        justify-content: space-between;
+        padding: 16px 0 16px 16px;
 
         span {
             position: relative;
@@ -138,4 +134,11 @@
             }
         }
     }
+}
+
+@media screen and (max-width: 768px) {
+    .tabs__item {
+        font-size: 16px;
+    }
+
 }
