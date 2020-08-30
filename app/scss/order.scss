@@ -228,18 +228,11 @@
 
         &__availability {
             margin-left: 30px;
-            width: 120px;
             margin-top: 0;
             font-size: 13px;
 
             &:before {
-                position: absolute;
-                content: '';
                 right: 105px;
-                width: 16px;
-                height: 16px;
-                border-radius: 10px;
-                background: #3ab011;
             }
         }
     }
